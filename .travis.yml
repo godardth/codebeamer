@@ -1,5 +1,12 @@
 language: python
 
+python:
+  - "2.7"
+  - "3.8"
+
+install:
+  - pip install .
+
 deploy:
   provider: pypi
   user: __token__
