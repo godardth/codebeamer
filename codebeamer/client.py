@@ -1,8 +1,9 @@
 import requests, json
+from .mixins.project import ProjectMixin
 
 
-class Codebeamer(object):
-
+class Codebeamer(ProjectMixin):
+    
     def __init__(self, url, login, password):
         self.base_url = url
         self.auth = (login, password)
