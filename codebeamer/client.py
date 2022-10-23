@@ -1,5 +1,5 @@
 import requests, json
-from .mixins.project import ProjectMixin
+from codebeamer.mixins.project import ProjectMixin
 
 
 class Codebeamer(ProjectMixin):
